@@ -1,0 +1,21 @@
+#vid-overlay {
+    background: rgba(0, 0, 0, 0) url("../img/overlay-pattern.png") repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#home {
+    position: relative;
+}
+
+.rotate-title {
+    text-transform: uppercase;
+}
+
+.hero .arrow-down {
+    background: url("../img/dropdown.png") no-repeat scroll -37px -52px;
+    display: inline-block;
+    height: 30px;
+    width: 53px;
+}
