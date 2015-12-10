@@ -176,7 +176,7 @@ a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px auto; }
-.section-padding { padding: 90px 0 100px }
+.section-padding { padding: 60px 0 }
 .dark-bg { background: #f3f5f8; }
 .light-bg { background-color: #fff; }
 .dark-box { background: #f3f5f8; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; }
@@ -213,8 +213,8 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 Hero
 ========================================================================== */
 .hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
-.hero h1 span { color: #a1a9b0; display: inline-block; }
+.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px 10px 60px;text-transform: uppercase }
+.hero h1 span { color: #a1a9b0; display: inline-block }
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
@@ -222,7 +222,7 @@ Hero
 Intro
 ========================================================================== */
 .intro { background: #f3f5f8; }
-.intro p { margin: 50px 0 0; }
+/*.intro p { margin: 50px 0 0; }*/
 h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features
