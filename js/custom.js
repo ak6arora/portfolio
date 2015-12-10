@@ -6,6 +6,14 @@ $(document).ready(function() {
             index = 0;
         else
             index++;
-        $('.rotate-title').text(titles[index]);
-    }, 1000)
+        $('.rotate-title').animate({
+            "opacity": "0","margin-left":"10px"
+        }, 500, function() {
+            $('.rotate-title').text(titles[index]);
+            $('.rotate-title').animate({
+                "opacity": "1","margin-left":"0"
+            }, 500);
+        });
+
+    }, 2000)
 })
