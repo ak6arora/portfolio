@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var titles = ['UI designers', 'UI developers']; //Titles to be shown
+    var titles = [ 'web developers','Programmers']; //Titles to be shown
     var index = 0; //Starting index for rotating titles
     var changeTitle = setInterval(function() {
         if (index == titles.length - 1)
@@ -16,6 +16,7 @@ $(document).ready(function() {
         });
 
     }, 2000);
+    //adding a class on scrolling to skill-set section
     $('.wp7').waypoint(function(){
         $('#skill-set').addClass('visible');
     })

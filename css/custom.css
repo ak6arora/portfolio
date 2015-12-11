@@ -1,3 +1,9 @@
+.intro p,.portfolio p {
+    color: #fff;
+}
+.portfolio h2 {
+    color: #ccc;
+}
 #vid-overlay {
     background: rgba(0, 0, 0, 0) url("../img/overlay-pattern.png") repeat scroll 0 0;
     height: 100%;
@@ -103,4 +109,25 @@
   bottom: -60.1041px;
   border-bottom: solid 4.2426px #40417c;
   border-left: solid 4.2426px #40417c;
+}
+.up-btn {
+    top: -22px;
+}
+footer {
+    position: relative;
+}
+.subscribe {
+    padding: 38px 0 140px;
+}
+.contact-details h2 span {
+    color: #40417c;
+}
+.light-box:hover, .light-box:focus {
+    box-shadow :0 3px 0 0 #40417c;
+}
+h1 {
+    font-family: 'Cookie', cursive;
+}
+h1.arrow {
+    font-size: 35px;
 }

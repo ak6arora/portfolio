@@ -53,13 +53,13 @@ html, html a {
 * elements. */
 
 html, button, input, select, textarea {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
 }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 
 body {
     margin: 0;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
 }
 /* ==========================================================================
 Links
