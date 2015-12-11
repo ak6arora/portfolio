@@ -1,9 +1,16 @@
-.intro p,.portfolio p {
+body {
+    overflow-x: hidden;
+}
+
+.intro p,
+.portfolio p {
     color: #fff;
 }
+
 .portfolio h2 {
     color: #ccc;
 }
+
 #vid-overlay {
     background: rgba(0, 0, 0, 0) url("../img/overlay-pattern.png") repeat scroll 0 0;
     height: 100%;
@@ -11,12 +18,40 @@
     width: 100%;
 }
 
+#home>nav {
+    background-color: #243040;
+    display: none;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
 #home {
     position: relative;
 }
 
+nav {
+    margin-top: 0;
+    background: #243040;
+}
+
+#nav-toggle {
+    z-index: 2;
+}
+
+.top-nav {
+    margin-top: 80px;
+}
+
 .rotate-title {
     text-transform: uppercase;
+}
+
+.nav_slide_button.active#nav-toggle span::before,
+.nav_slide_button.active#nav-toggle span::after {
+    background: #fff;
 }
 
 .hero .arrow-down {
@@ -50,8 +85,9 @@
     perspective: 600px;
     text-align: center;
 }
+
 .skill-set .skills li {
-   /* background: url("../img/hexagon.png") repeat scroll 0 0;*/
+    /* background: url("../img/hexagon.png") repeat scroll 0 0;*/
     display: inline-block;
     /*height: 216px;*/
     margin: 28px 14px 28px;
@@ -64,70 +100,142 @@
 .skill-set.visible .skills li {
     transform: scale(1);
 }
+
 .skill-set .skills li div {
     display: table;
     height: 100%;
     width: 100%;
 }
+
 .skill-set .skills li div p {
     color: #fff;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
+
 .hexagon {
-  position: relative;
-  width: 170px; 
-  height: 98.15px;
-  background-color: #999aca;
-  margin: 49.07px 0;
-  border-left: solid 3px #40417c;
-  border-right: solid 3px #40417c;
+    position: relative;
+    width: 170px;
+    height: 98.15px;
+    background-color: #999aca;
+    margin: 49.07px 0;
+    border-left: solid 3px #40417c;
+    border-right: solid 3px #40417c;
 }
 
 .hexagon:before,
 .hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: -999;
-  width: 120.21px;
-  height: 120.21px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 21.8959px;
+    content: "";
+    position: absolute;
+    z-index: -999;
+    width: 120.21px;
+    height: 120.21px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 21.8959px;
 }
 
 .hexagon:before {
-  top: -60.1041px;
-  border-top: solid 4.2426px #40417c;
-  border-right: solid 4.2426px #40417c;
+    top: -60.1041px;
+    border-top: solid 4.2426px #40417c;
+    border-right: solid 4.2426px #40417c;
 }
 
 .hexagon:after {
-  bottom: -60.1041px;
-  border-bottom: solid 4.2426px #40417c;
-  border-left: solid 4.2426px #40417c;
+    bottom: -60.1041px;
+    border-bottom: solid 4.2426px #40417c;
+    border-left: solid 4.2426px #40417c;
 }
+
 .up-btn {
     top: -22px;
 }
+
 footer {
     position: relative;
 }
+
 .subscribe {
     padding: 38px 0 140px;
 }
+
 .contact-details h2 span {
     color: #40417c;
 }
-.light-box:hover, .light-box:focus {
-    box-shadow :0 3px 0 0 #40417c;
+
+.light-box:hover,
+.light-box:focus {
+    box-shadow: 0 3px 0 0 #40417c;
 }
+
 h1 {
     font-family: 'Cookie', cursive;
 }
+
 h1.arrow {
     font-size: 35px;
+}
+/*back-to-top arrow styles*/
+.cd-top {
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(64, 65, 124, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+    background-color: #40417C;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
 }
