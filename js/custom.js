@@ -15,5 +15,8 @@ $(document).ready(function() {
             }, 500);
         });
 
-    }, 2000)
+    }, 2000);
+    $('.wp7').waypoint(function(){
+        $('#skill-set').addClass('visible');
+    })
 })

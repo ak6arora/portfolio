@@ -4,12 +4,15 @@
     position: absolute;
     width: 100%;
 }
+
 #home {
     position: relative;
 }
+
 .rotate-title {
     text-transform: uppercase;
 }
+
 .hero .arrow-down {
     background: url("../img/dropdown.png") no-repeat scroll -37px -52px;
     display: inline-block;
@@ -22,6 +25,7 @@
     animation-delay: 1s;
     animation-iteration-count: 4;
 }
+
 @keyframes example {
     0% {
         bottom: 0;
@@ -29,4 +33,73 @@
     100% {
         bottom: -20px;
     }
+}
+
+.skill-set .skills {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    min-height: 500px;
+    padding-top: 90px;
+    perspective: 600px;
+    text-align: center;
+}
+.skill-set .skills li {
+   /* background: url("../img/hexagon.png") repeat scroll 0 0;*/
+    display: inline-block;
+    /*height: 216px;*/
+    margin: -30px 15px 0;
+    position: relative;
+    transform: scale(0);
+    transition: all 2s ease;
+    /*width: 188px;*/
+}
+
+.skill-set.visible .skills li {
+    transform: scale(1);
+}
+.skill-set .skills li div {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.skill-set .skills li div p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.hexagon {
+  position: relative;
+  width: 170px; 
+  height: 98.15px;
+  background-color: #999aca;
+  margin: 49.07px 0;
+  border-left: solid 3px #40417c;
+  border-right: solid 3px #40417c;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 120.21px;
+  height: 120.21px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 21.8959px;
+}
+
+.hexagon:before {
+  top: -60.1041px;
+  border-top: solid 4.2426px #40417c;
+  border-right: solid 4.2426px #40417c;
+}
+
+.hexagon:after {
+  bottom: -60.1041px;
+  border-bottom: solid 4.2426px #40417c;
+  border-left: solid 4.2426px #40417c;
 }
