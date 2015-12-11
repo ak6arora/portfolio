@@ -48,7 +48,7 @@
    /* background: url("../img/hexagon.png") repeat scroll 0 0;*/
     display: inline-block;
     /*height: 216px;*/
-    margin: -30px 15px 0;
+    margin: 28px 14px 28px;
     position: relative;
     transform: scale(0);
     transition: all 2s ease;
@@ -64,6 +64,7 @@
     width: 100%;
 }
 .skill-set .skills li div p {
+    color: #fff;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -82,7 +83,7 @@
 .hexagon:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: -999;
   width: 120.21px;
   height: 120.21px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
