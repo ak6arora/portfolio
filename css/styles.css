@@ -555,22 +555,23 @@ Hero
 ========================================================================== */
 
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center;
+    background: url('../img/banner.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 65px 0 300px 0;
     height: auto;
+    filter:grayscale(100%);
 }
 .hero h1 {
     font-size: 40px;
     letter-spacing: 12px;
-    margin: 10px 10px 60px;
+    margin: 10px 10px 60px 168px;
     text-transform: uppercase
 }
 .hero h1 span {
-    color: #a1a9b0;
+    color: #fff;
     display: inline-block
 }
 .hero p {
