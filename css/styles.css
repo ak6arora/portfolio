@@ -562,6 +562,7 @@ Hero
     background-size: cover;
     padding: 65px 0 300px 0;
     height: auto;
+    -webkit-filter: grayscale(100%);
     filter:grayscale(100%);
 }
 .hero h1 {
@@ -773,7 +774,7 @@ a.close-overlay {
 a.close-overlay.hidden {
     display: none;
 }
-a.expand {
+span.expand {
     display: block;
     position: absolute;
     z-index: 100;
@@ -795,7 +796,7 @@ a.expand {
     height: 100%;
     opacity: 0;
 }
-.overlay-effect .overlay a.expand {
+.overlay-effect .overlay span.expand {
     left: 0;
     right: 0;
     bottom: 47%;
@@ -904,7 +905,9 @@ Team
 ========================================================================== */
 
 .team img {
-    margin-bottom: 40px;
+    border-radius: 44% 44% 20% 20%;
+    margin-bottom: 15px;
+    height: 225px;
 }
 ul.social-buttons {
     list-style: none;

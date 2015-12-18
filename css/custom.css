@@ -3,10 +3,15 @@ body {
 }
 
 .intro p,
-.portfolio p {
+.portfolio p,.portfolio .read-more {
     color: #fff;
 }
-
+.portfolio .read-more {
+    cursor: pointer;
+}
+.portfolio .read-more:hover {
+    color: #3dc9b3;
+}
 .portfolio h2 {
     color: #ccc;
 }
@@ -223,7 +228,12 @@ h1.arrow {
     background-color: #40417C;
     opacity: 1;
 }
-
+.models .modal-content {
+    box-shadow: 0 12px 30px 15px rgba(64, 65, 124, 0.5);
+}
+.portfolio .overlay .fa {
+    cursor: pointer;
+}
 @media only screen and (min-width: 768px) {
     .cd-top {
         right: 20px;
@@ -237,5 +247,10 @@ h1.arrow {
         width: 60px;
         right: 30px;
         bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .models .modal-dialog {
+        width: 800px;
     }
 }
