@@ -562,7 +562,9 @@ Hero
     background-size: cover;
     padding: 65px 0 300px 0;
     height: auto;
-    -webkit-filter: grayscale(100%);
+}
+.grayscale {
+	-webkit-filter: grayscale(100%);
     filter:grayscale(100%);
 }
 .hero h1 {

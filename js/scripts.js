@@ -42,6 +42,8 @@ $(document).ready(function() {
     $('.nav_slide_button').click(function() {
         //$('.pull').slideToggle();
         if ($(this).hasClass('active')) {
+            $('#hero').addClass('grayscale');
+           
             $("#home>nav").animate({
                 left: '100%'
             },1500,function(){
@@ -51,7 +53,9 @@ $(document).ready(function() {
         	$("#home>nav").show();
             $("#home>nav").animate({
                 left: '0'
-            },1500);
+            },1500,function(){
+                $('#hero').removeClass('grayscale');
+            });
         }
 
     });
