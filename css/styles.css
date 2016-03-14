@@ -907,7 +907,8 @@ Team
 ========================================================================== */
 
 .team img {
-    border-radius: 44% 44% 20% 20%;
+    /*border-radius: 44% 44% 20% 20%;*/
+    border-radius: 50% 4%;
     margin-bottom: 15px;
     height: 225px;
 }
